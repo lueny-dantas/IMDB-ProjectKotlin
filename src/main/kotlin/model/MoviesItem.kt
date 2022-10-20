@@ -1,4 +1,3 @@
-
 import extensions.loadImageBitmap
 import model.Movie
 import androidx.compose.foundation.Image
@@ -21,67 +20,71 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-public fun MovieItem(movie: Movie){
+public fun MovieItem(movie: Movie) {
 
     Column(
-        modifier = Modifier
-            .width(300.dp)
-            .padding(20.dp)
-
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(
-//          painter = painterResource("drawable/the-notebook.jpeg"),
-            bitmap = movie.image.loadImageBitmap(),
-            contentDescription = "Capa do Filme",
+        Column(
             modifier = Modifier
-                .fillMaxWidth()
-                .clip(RoundedCornerShape(4.dp))
-            ,
-            contentScale = ContentScale.Crop
-        )
-        Row(
-            modifier = Modifier.fillMaxWidth()
-                .padding(
-                    top = 8.dp,
-                    start = 8.dp,
-                    end = 8.dp
+                .width(300.dp)
+                .padding(20.dp)
 
-                ),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
         ) {
+            Image(
+                bitmap = movie.image.loadImageBitmap(),
+                contentDescription = "Capa do Filme",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(4.dp)),
+                contentScale = ContentScale.Crop
+            )
+            Row(
+                modifier = Modifier.fillMaxWidth()
+                    .padding(
+                        top = 8.dp,
+                        start = 8.dp,
+                        end = 8.dp
 
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(
-                    Icons.Default.Star,
-                    "ícone de estrela para nota",
-                    tint = Color.Yellow,
-                    modifier = Modifier.height(16.dp)
-                )
+                    ),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        Icons.Default.Star,
+                        "ícone de estrela para nota",
+                        tint = Color.Yellow,
+                        modifier = Modifier.height(16.dp)
+                    )
+                    Text(
+                        movie.rating.toString(),
+                        modifier = Modifier
+                            .padding(start = 2.dp),
+                        color = Color(0xffeeeeee),
+                        fontSize = 14.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
                 Text(
-                    movie.rating.toString(),
-                    modifier = Modifier
-                        .padding(start = 2.dp),
-                    color = Color(0xffeeeeee),
+                    movie.year.toString(),
                     fontSize = 14.sp,
-                    fontWeight = FontWeight.Bold
+                    color = Color(0xffeeeeee),
                 )
             }
             Text(
-                movie.year.toString(),
+                movie.title,
+                modifier = Modifier.padding(
+                    start = 16.dp,
+                    top = 8.dp,
+                    end = 16.dp
+                ),
                 fontSize = 14.sp,
-                color = Color(0xffeeeeee),
+                textAlign = TextAlign.Center
             )
         }
-        Text(
-            movie.title,
-            modifier = Modifier.padding(
-                start = 16.dp,
-                top = 8.dp,
-                end = 16.dp
-            ),
-            fontSize = 14.sp,
-            textAlign = TextAlign.Center
-        )
     }
 }
