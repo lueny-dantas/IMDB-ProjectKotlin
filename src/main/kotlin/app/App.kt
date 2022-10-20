@@ -23,9 +23,7 @@ fun App(movies: List<Movie>) {
             Box(modifier = Modifier.fillMaxSize()) {
                 LazyColumn {
                     items(movies) { movie ->
-                        MovieItem(
-                            movie
-                        )
+                        MovieItem(movie)
                     }
                 }
             }

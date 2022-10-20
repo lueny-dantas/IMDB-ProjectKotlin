@@ -26,7 +26,7 @@ public fun MovieItem(movie: Movie){
     Column(
         modifier = Modifier
             .width(300.dp)
-            .padding(14.dp)
+            .padding(20.dp)
 
     ) {
         Image(
