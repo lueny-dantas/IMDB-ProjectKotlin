@@ -1,6 +1,6 @@
 # IMDB-ProjectKotlin
 
-Esse projeto consome a API da [IMDB](https://imdb-api.com/API/),no qual é feita a busca e apresentação dos top 250 filmes da plataforma. Foi desenvolvido um aplicativo desktop utilizando as bibliotecas abaixo:
+Esse projeto consome a API da [IMDB](https://imdb-api.com/API/)no qual é feita a busca e apresentação dos top 250 filmes da plataforma. Foi desenvolvido um aplicativo desktop utilizando as bibliotecas abaixo:
 
 # Tecnologias utilizadas:
  - Kotlin Multiplataforma;
