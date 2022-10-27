@@ -10,5 +10,6 @@ Esse projeto consome a API da [IMDB](https://imdb-api.com/API/)no qual é feita 
  - OkHttp3.
  
  # Ilustração
- <image src=https://user-images.githubusercontent.com/98789294/197062996-6680eee2-a3b2-43d7-8f79-9946d61e3f06.png width=500, height=700>
- </image>
+ 
+ ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/98789294/198401153-35bf2c44-2e76-46d1-8dc7-94ada30ace18.gif)
+
