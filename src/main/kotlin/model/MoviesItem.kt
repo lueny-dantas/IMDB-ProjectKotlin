@@ -29,7 +29,7 @@ public fun MovieItem(movie: Movie) {
     ) {
         Column(
             modifier = Modifier
-                .width(300.dp)
+                .width(800.dp)
                 .padding(20.dp)
 
         ) {
@@ -37,9 +37,8 @@ public fun MovieItem(movie: Movie) {
                 bitmap = movie.image.loadImageBitmap(),
                 contentDescription = "Capa do Filme",
                 modifier = Modifier
-                    .fillMaxWidth()
                     .clip(RoundedCornerShape(4.dp)),
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Fit
             )
             Row(
                 modifier = Modifier.fillMaxWidth()
