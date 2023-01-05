@@ -18,7 +18,7 @@ Desenvolvido para desktop utilizando as bibliotecas abaixo:
 * OkHttp3.
 
 # 📂Acesso ao projeto
-Você pode acessar o código fonte do projeto inicial (https://github.com/lueny-dantas/IMDB-ProjectKotlin) ou baixá-lo.
+Você pode acessar o código fonte do [projeto inicial](https://github.com/lueny-dantas/IMDB-ProjectKotlin) ou baixá-lo.
 
 
 # 🛠️ Abrir e rodar o projeto
