@@ -1,8 +1,7 @@
 # IMDB-ProjectKotlin
-App que permite ser feita uma busca dos top 250 filmes da plataforma IMDB.
 
 # 🔨 Funcionalidades do projeto
-O projeto foi desenvolvido para desktop e consome a API e apresenta o nome do filme, ano que foi lançado e a nota de classificação dada pela plataforma, após realizar a integração com a Web API da [IMDB](https://imdb-api.com/API/) é feita a busca e apresentação dos top 250 filmes. 
+O projeto foi desenvolvido para desktop e consome a API do [IMDB](https://imdb-api.com/API/) para listar os top 250 filmes, apresentando o nome do filme, ano que foi lançado e a nota de classificação dada pela plataforma.
 
 
 # ✨ Ilustração
@@ -11,15 +10,10 @@ O projeto foi desenvolvido para desktop e consome a API e apresenta o nome do fi
  
 
 # ✔️ Técnicas e tecnologias utilizadas
-* Kotlin Multiplataforma;
-* JetPack Compose;
+* JetPack Compose Desktop;
 * Retrofit2;
 * Moshi;
 * OkHttp3.
-
-# 📂Acesso ao projeto
-Você pode acessar o código fonte do projeto inicial [aqui](https://github.com/lueny-dantas/IMDB-ProjectKotlin) ou baixá-lo.
-
 
 # 🛠️ Abrir e rodar o projeto
 Após baixar o projeto, você pode abrir com o Intellij IDEA. Para isso, na tela de launcher clique em:
